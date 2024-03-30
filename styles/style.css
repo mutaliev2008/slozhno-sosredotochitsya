@@ -93,7 +93,6 @@
   align-items: center;
   position: absolute;
   z-index: -1;
-  display: var(--decorative-element-display);
   top: 20px;
   right: 28px;
   gap: 10px;

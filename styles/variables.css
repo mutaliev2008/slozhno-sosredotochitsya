@@ -13,3 +13,7 @@
   --title-shadow: rgb(255, 0, 112);
   --subtitle-color: rgb(0, 0, 40);
 }
+
+.decorative__element {
+  display: var(--decorative-element-display);
+}
