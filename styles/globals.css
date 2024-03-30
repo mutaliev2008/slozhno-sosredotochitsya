@@ -40,3 +40,40 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+/* .main-content {
+  display: grid;
+  gap: 20px;
+  margin-block-start: 20px;
+
+  grid-template-areas:
+    "sunset sunset icecream"
+    "tape book icecream"
+    "tape street street";
+}
+
+.gallery_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-sunset {
+  grid-area: sunset;
+}
+
+.img-icecream {
+  grid-area: icecream;
+}
+
+.img-book {
+  grid-area: book;
+}
+
+.img-tape {
+  grid-area: tape;
+}
+
+.img-street {
+  grid-area: street;
+} */

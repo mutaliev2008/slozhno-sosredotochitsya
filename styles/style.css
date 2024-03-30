@@ -1,5 +1,427 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: "IBM Plex mono";
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--cover-image);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  max-width: 1024px;
+  min-height: 768px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 18px;
+  gap: 10px;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--menu-color);
+  outline: 0;
+  outline-offset: -1px;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--menu-color);
+  outline-offset: -1px;
+}
+
+.header__theme-menu-item {
+  list-style-type: none;
+}
+
+.header__theme-menu-button {
+  width: 70px;
+  height: 26px;
+  color: var(--menu-color);
+  background-color: transparent;
+  font-size: 18px;
+  border: 0;
+  font-weight: 400;
+  text-transform: lowercase;
+  line-height: 18px;
+}
+
+.header__theme-menu-item:hover {
+  outline: 1px solid var(--menu-color);
+  outline-offset: -1px;
+}
+
+.header-title {
+  color: var(--header-title-color);
+  text-shadow: 4px 4px var(--title-shadow);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-weight: 700;
+  line-height: 82.5%;
+  text-align: left;
+}
+
+.container__header-p {
+  margin: 0px 20px 20px 0px;
+  grid-column-start: 2;
+  background: var(--theme-border);
+  color: var(--subtitle-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+}
+
+.container__header-text {
+  display: grid;
+  align-items: center;
+  text-align: left;
+  grid-template-columns: 1fr 1fr;
+}
+/* 
+.decorative__element {
+  display: var(--decorative-element-display);
+  position: absolute;
+  margin: 21px 0px 0px 943px;
+} */
+
+.decorative__element {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+  display: var(--decorative-element-display);
+  top: 20px;
+  right: 28px;
+  gap: 10px;
+}
+
+.decorative__element::before {
+  content: "rec";
+  text-transform: uppercase;
+  color: var(--theme-border);
+  line-height: 23.4px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.decorative__element::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px var(--theme-border);
+  background: var(--theme-border);
+  inline-size: 9px;
+  block-size: 9px;
+}
+/* .decorative__element::before {
+  content: "REC";
+  font-size: 18px;
+  color: var(--theme-border);
+}
+
+.decorative__element:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  margin: 6px 0px 0px 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--theme-border);
+  background: var(--theme-border);
+  display: block;
+} */
+
+.main {
+  display: flex;
+  gap: 60px;
+  /* background-color: var(--main-background); */
+  max-width: 1024px;
+  /* max-height: 3412px; */
+  flex-wrap: wrap;
+}
+
+.first_theme_list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: min-content 1fr;
+  margin: 60px 20px 0px 20px !important;
+}
+
+.theme_list {
+  margin: 0px 20px 0px 20px;
+}
+
+.theme-subtitle {
+  color: var(--menu-color);
+  font-size: 18px;
+  width: 315px;
+}
+
+.title-decor {
+  background: var(--theme-border);
+  color: var(--subtitle-color);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.content {
+  color: var(--text-color);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  margin-block-end: 20px;
+  text-align: left;
+}
+
+.content-link {
+  text-decoration: none;
+  text-shadow: 2px 3px var(--theme-border);
+}
+.content-link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+.content-link:focus-visible {
+  outline: 1px solid var(--text-color);
+  outline-offset: -1px;
+}
+
+.second-theme_text {
+  display: grid;
+  margin-block-start: 20px;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.third-theme_list {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 20px;
+}
+
+.third-theme_list
+  > .theme-text
+  .title-decor:not(:first-child):not(:first-child) {
+  font-weight: 400;
+}
+
+.third-theme_list > .theme-text .content:last-child {
+  margin-block-end: 0px;
+}
+
+.title-decor_below {
+  margin-block-start: 21px;
+}
+
+.section-gallery {
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "sunset sunset icecream"
+    "tape book icecream"
+    "tape street street";
+  gap: 20px;
+  margin: 10px 20px 0px 20px;
+  max-height: 1101px;
+}
+
+.section-gallery .title-decor-gallery {
+  grid-area: title;
+  margin-block-start: 10px;
+  margin-block-end: 0;
+}
+
+.section-gallery .picture-decor {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.section-gallery .picture-decor:nth-child(2) {
+  grid-area: sunset;
+}
+
+.section-gallery .picture-decor:nth-child(3) {
+  grid-area: icecream;
+}
+
+.section-gallery .picture-decor:nth-child(4) {
+  grid-area: tape;
+}
+
+.section-gallery .picture-decor:nth-child(5) {
+  grid-area: book;
+}
+
+.section-gallery .picture-decor:nth-child(6) {
+  grid-area: street;
+}
+
+.footer {
+  max-width: 1024px;
+  display: flex;
+  min-height: 768px;
+  /* background-color: var(--main-background); */
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 61px;
+}
+.wrapper {
+  background-color: var(--main-background);
+}
+
+.footer-title {
+  color: var(--header-title-color);
+  text-shadow: 2px 2px var(--title-shadow);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-weight: 700;
+  line-height: 82.5%;
+  text-align: left;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid var(--menu-color);
+  border-width: 1px 1px 0 0;
+  top: 20px;
+  right: 20px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  height: 25px;
+  width: 25px;
+  border-width: 0 0 1px 1px;
+  left: 20px;
+  bottom: 20px;
+  border-inline-start: 1px solid var(--menu-color);
+  border-block-end: 1px solid var(--menu-color);
+}
+@media (max-width: 1023px) {
+  .header__theme-menu-list {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-block-start: 191px;
+    margin-inline-end: 20px;
+  }
+  .header,
+  .footer {
+    min-height: 1024px;
+  }
+  .second-theme_text {
+    display: block;
+  }
+  .theme-subtitle {
+    width: 236px;
+  }
+  .section-gallery {
+    max-height: 1410px;
+  }
+  .page.theme_light {
+    --title-shadow: rgb(255, 141, 203);
+  }
+}
+
+@media (max-width: 767px) {
+  .header__theme-menu-list {
+    margin-block-start: 75px;
+    margin-inline-end: 11px;
+  }
+
+  .header-title,
+  .footer-title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+  .header,
+  .main,
+  .footer {
+    max-width: 375px;
+  }
+  .footer {
+    min-height: 667px;
+    margin-block-start: 40px;
+  }
+  .container__header-text {
+    margin: 0 10px;
+    display: block;
+  }
+  .header {
+    height: 668px;
+    display: flex;
+    gap: 56px;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .header-title {
+    margin-inline-start: 10px;
+    margin-block-start: 11px;
+  }
+  .container__header-p {
+    margin: 0;
+  }
+  .header::before {
+    right: 10px;
+    top: 10px;
+  }
+  .header::after {
+    left: 10px;
+    bottom: 20px;
+  }
+  .decorative__element {
+    top: 10px;
+    right: 20px;
+  }
+  .main {
+    gap: 31px;
+  }
+  .first_theme_list {
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr;
+    margin: 40px 10px 0px 10px !important;
+  }
+  .theme-subtitle {
+    width: 346px;
+  }
+  .theme_list {
+    margin: 0px 10px 0px 10px;
+  }
+  .third-theme_list {
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    gap: 20px;
+  }
+  .section-gallery {
+    margin: 10px 10px 0px 10px;
+    grid-template-areas:
+      "title"
+      "sunset"
+      "icecream"
+      "tape"
+      "book"
+      "street";
+    gap: 10px;
+  }
+  .decorated-zone::before {
+    right: 10px;
+    top: 10px;
+  }
+  .decorated-zone::after {
+    left: 10px;
+    bottom: 10px;
+  }
 }
