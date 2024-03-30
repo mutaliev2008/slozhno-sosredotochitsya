@@ -10,7 +10,7 @@
 }
 
 .header {
-  max-width: 1024px;
+  width: 1024px;
   min-height: 768px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
@@ -137,10 +137,10 @@
 .main {
   display: flex;
   gap: 60px;
-  /* background-color: var(--main-background); */
-  max-width: 1024px;
-  /* max-height: 3412px; */
+  width: 1024px;
   flex-wrap: wrap;
+  /* background-color: var(--main-background); */
+  /* max-height: 3412px; */
 }
 
 .first_theme_list {
@@ -261,13 +261,13 @@
 }
 
 .footer {
-  max-width: 1024px;
+  width: 1024px;
   display: flex;
   min-height: 768px;
-  /* background-color: var(--main-background); */
   justify-content: center;
   align-items: center;
   margin-block-start: 61px;
+  /* background-color: var(--main-background); */
 }
 .wrapper {
   background-color: var(--main-background);
@@ -321,6 +321,11 @@
   .footer {
     min-height: 1024px;
   }
+  .header,
+  .main,
+  .footer {
+    width: 768px;
+  }
   .second-theme_text {
     display: block;
   }
@@ -348,7 +353,7 @@
   .header,
   .main,
   .footer {
-    max-width: 375px;
+    width: 375px;
   }
   .footer {
     min-height: 667px;
