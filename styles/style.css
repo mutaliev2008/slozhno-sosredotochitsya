@@ -271,6 +271,7 @@
 }
 .wrapper {
   background-color: var(--main-background);
+  width: 1024px;
 }
 
 .footer-title {
@@ -322,6 +323,7 @@
     min-height: 1024px;
   }
   .header,
+  .wrapper,
   .main,
   .footer {
     width: 768px;
@@ -351,6 +353,7 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
   .header,
+  .wrapper,
   .main,
   .footer {
     width: 375px;
