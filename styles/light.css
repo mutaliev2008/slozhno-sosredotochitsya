@@ -6,7 +6,7 @@
 
 .page.theme_light {
   --menu-color: rgb(53, 52, 48);
-  --cover-image: url(/images/cover-image-light.png);
+  --cover-image: url(../images/cover-image-light.png);
   --theme-border: rgb(255, 141, 203);
   --header-title-color: rgb(255, 194, 230);
   --main-background: rgb(255, 241, 247);
