@@ -1,0 +1,16 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_light {
+  --menu-color: rgb(53, 52, 48);
+  --cover-image: url(../images/cover-image-light.png);
+  --theme-border: rgb(255, 141, 203);
+  --header-title-color: rgb(255, 194, 230);
+  --main-background: rgb(255, 241, 247);
+  --text-color: rgb(53, 52, 48);
+  --decorative-element-display: none;
+  --subtitle-color: rgb(53, 52, 48);
+}
