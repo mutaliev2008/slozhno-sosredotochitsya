@@ -37,10 +37,15 @@ button,
 a {
   color: currentColor;
   font-family: inherit;
+  cursor: pointer;
   font-size: inherit;
   line-height: inherit;
 }
 
+.header {
+  min-height: 668px;
+  max-height: 768px;
+}
 /* .main-content {
   display: grid;
   gap: 20px;

@@ -13,4 +13,11 @@
   --text-color: rgb(53, 52, 48);
   --decorative-element-display: none;
   --subtitle-color: rgb(53, 52, 48);
+  --title-shadow-hover: rgba(50, 49, 45, 0.4);
+  --title-shadow: rgb(255, 0, 112);
+}
+@media (max-width: 1023px) {
+  .page.theme_light {
+    --title-shadow: rgb(255, 141, 203);
+  }
 }

@@ -12,4 +12,5 @@
   --decorative-element-display: flex;
   --title-shadow: rgb(255, 0, 112);
   --subtitle-color: rgb(0, 0, 40);
+  --title-shadow-hover: rgba(255, 0, 112, 0.4);
 }

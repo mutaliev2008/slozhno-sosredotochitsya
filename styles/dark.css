@@ -1,4 +1,4 @@
-.page.theme_dark {
+.page {
   --menu-color: rgb(255, 0, 112);
   --theme-border: rgb(255, 0, 112);
   --header-title-color: rgb(219, 0, 255);
@@ -6,5 +6,20 @@
   --main-background: rgb(0, 0, 40);
   --text-color: rgb(241, 178, 206);
   --decorative-element-display: flex;
+  --title-shadow: rgb(255, 0, 112);
   --subtitle-color: rgb(0, 0, 40);
+  --title-shadow-hover: rgba(255, 0, 112, 0.4);
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    --menu-color: rgb(53, 52, 48);
+    --cover-image: url(../images/cover-image-light.png);
+    --theme-border: rgb(255, 141, 203);
+    --header-title-color: rgb(255, 194, 230);
+    --main-background: rgb(255, 241, 247);
+    --text-color: rgb(53, 52, 48);
+    --decorative-element-display: none;
+    --subtitle-color: rgb(53, 52, 48);
+  }
 }
