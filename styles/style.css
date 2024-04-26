@@ -66,6 +66,7 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
+  margin-left: -20px;
 }
 
 .container__header-p {
@@ -290,6 +291,7 @@
 @media (max-width: 767px) {
   .header-title,
   .footer-title {
+    margin-left: 0;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
