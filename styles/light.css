@@ -16,22 +16,29 @@
   --title-shadow-hover: rgba(50, 49, 45, 0.4);
   --title-shadow: rgb(255, 0, 112);
 }
+
+@media (prefers-color-scheme: light) {
+  .page.theme_auto {
+    --menu-color: rgb(53, 52, 48);
+    --cover-image: url(../images/cover-image-light.png);
+    --theme-border: rgb(255, 141, 203);
+    --header-title-color: rgb(255, 194, 230);
+    --main-background: rgb(255, 241, 247);
+    --text-color: rgb(53, 52, 48);
+    --decorative-element-display: none;
+    --subtitle-color: rgb(53, 52, 48);
+    --title-shadow-hover: rgba(50, 49, 45, 0.4);
+    --title-shadow: rgb(255, 0, 112);
+  }
+  @media (max-width: 1023px) {
+    .page.theme_auto {
+      --title-shadow: rgb(255, 141, 203);
+    }
+  }
+}
+
 @media (max-width: 1023px) {
   .page.theme_light {
     --title-shadow: rgb(255, 141, 203);
-  }
-}
-@media (prefers-color-scheme: light) {
-  .page.theme_light {
-    --menu-color: rgb(255, 0, 112);
-    --theme-border: rgb(255, 0, 112);
-    --header-title-color: rgb(219, 0, 255);
-    --cover-image: url(../images/cover-image-dark.png);
-    --main-background: rgb(0, 0, 40);
-    --text-color: rgb(241, 178, 206);
-    --decorative-element-display: flex;
-    --title-shadow: rgb(255, 0, 112);
-    --subtitle-color: rgb(0, 0, 40);
-    --title-shadow-hover: rgba(255, 0, 112, 0.4);
   }
 }
