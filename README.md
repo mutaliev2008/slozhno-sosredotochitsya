@@ -1,4 +1,4 @@
-https://github.com/mutaliev2008/slozhno-sosredotochitsya.git
+[Посетить сайт](https://mutaliev2008.github.io/slozhno-sosredotochitsya/)
 
 
 
